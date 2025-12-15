@@ -60,43 +60,57 @@ DIALECT_CHOICES = ["(无)", "sichuan", "yueyu", "henan"]
 
 EXAMPLES_LIST = [
     [
-        None, "", "", None, "", "", ""
+        "example/audios/trump.wav",
+        """We're in a failing nation. It's a nation in decline. I'm gonna turn it around. Don't wait to vote. Make sure you're registered and cast your vote as soon as you can. God bless you and God bless our beautiful country. Thank you very much.""",
+        "example/audios/musk.wav",
+        "Uh, so I- I thought- I was trying to think what is the most useful thing that I could... What could I say that could actually be helpful or useful to you in the future? Um, and, uh, I thought, uh, perhaps, uh, tell the story of, um, how I- how I sort of came to be here. How did some of these things happen? And- and maybe there's some lessons there. Um, 'cause I- I often find myself wondering how did this happen.""",
+        """[S1] Elon, man, Starship blows my mind. That Mars dream in '26... it's gonna be epic! Happy New Year, brother! 
+[S2] Thanks, sir—and Happy New Year! Late '26, sending five uncrewed Starships. Heart's racing just thinking about them touching down on Mars. [S1] <|laughter|> Five ships heading to the red planet? Chills, brother. Pure chills. America leading the way—makes me so proud! 
+[S2] Me too. If they land safe, we're one huge step closer to humans there. Feels unreal sometimes. 
+[S1] Unreal and beautiful. Planting that flag... tears in my eyes already. 
+[S2] American flag first, always. Orbital refueling demos in '26 gotta work—nerves are high, but the excitement's higher. 
+[S1] You'll crush it. Starlink connecting Mars? That's domination—and it feels damn good. 
+[S2] <|laughter|> Hell yeah. Optimus bots building the future up there—just imagine that. Gives me goosebumps.
+[S1] Robots on Mars, no quitting, just grinding. So inspiring. We're not just winning—we're changing humanity forever! 
+[S2] Forever. Can't wait, sir. This is everything. Here's to the future!""",
+        "example/audios/sample1.wav",
+    ],
+    [
+        "example/audios/wilson.wav",
+        "Wow, Elon Musk has co-founded so many incredible companies—like the revolutionary Tesla, the bold SpaceX, and the cutting-edge xAI! He owns around 15% of Tesla—a company he first backed in 2004 and has led as CEO since 2008, pushing it to amazing heights!",
+        "example/audios/musk.wav",
+        "Uh, so I- I thought- I was trying to think what is the most useful thing that I could... What could I say that could actually be helpful or useful to you in the future? Um, and, uh, I thought, uh, perhaps, uh, tell the story of, um, how I- how I sort of came to be here. How did some of these things happen? And- and maybe there's some lessons there. Um, 'cause I- I often find myself wondering how did this happen.",
+        """[S1] Hey Elon, wow, everyone’s buzzing about Optimus in 2026. Will you really produce millions of them?
+[S2] Oh yeah, once we’re at full scale, the plan is millions.
+[S1] Awesome! And the price — will it hit around $20k?
+[S2] Yep, absolutely under $20k at high volume to make it affordable for pretty much everyone.
+[S1] Nice! Are the Gen 3 hands with 50 actuators the biggest upgrade?
+[S2] Definitely, man. The dexterity is next level — way better than human hands.
+[S1] Whoa, it’s already folding laundry and cooking, right? How much is real autonomy vs remote control these days?
+[S2] Haha, it’s doing laundry, cooking, even yoga. Core tasks are pure end-to-end AI; we only use remote control for safety in some demos.
+[S1] Cool! When you start selling — factories first or homes? And one going to Mars in 2026?
+[S2] Factories first, then homes. And yes, at least one on Starship to Mars. Early Merry Christmas!""",
+        "example/audios/sample2.wav",
     ],
     [
         S1_PROMPT_WAV,
         "喜欢攀岩、徒步、滑雪的语言爱好者，以及过两天要带着全部家当去景德镇做陶瓷的白日梦想家。",
-        "",
         S2_PROMPT_WAV,
         "呃，还有一个就是要跟大家纠正一点，就是我们在看电影的时候，尤其是游戏玩家，看电影的时候，在看到那个到西北那边的这个陕北民谣，嗯，这个可能在想，哎，是不是他是受到了黑神话的启发？",
-        "",
-        "[S1] 哈喽，AI时代的冲浪先锋们！欢迎收听《AI生活进行时》。啊，一个充满了未来感，然后，还有一点点，<|laughter|>神经质的播客节目，我是主持人小希。\n[S2] 哎，大家好呀！我是能唠，爱唠，天天都想唠的唠嗑！\n[S1] 最近活得特别赛博朋克哈！以前老是觉得AI是科幻片儿里的，<|sigh|> 现在，现在连我妈都用AI写广场舞文案了。\n[S2] 这个例子很生动啊。是的，特别是生成式AI哈，感觉都要炸了！ 诶，那我们今天就聊聊AI是怎么走进我们的生活的哈！",
-    ],
-    [
-        S1_PROMPT_WAV,
-        "喜欢攀岩、徒步、滑雪的语言爱好者，以及过两天要带着全部家当去景德镇做陶瓷的白日梦想家。",
-        "<|Sichuan|>要得要得！前头几个耍洋盘，我后脚就背起铺盖卷去景德镇耍泥巴，巴适得喊老天爷！",
-        S2_PROMPT_WAV,
-        "呃，还有一个就是要跟大家纠正一点，就是我们在看电影的时候，尤其是游戏玩家，看电影的时候，在看到那个到西北那边的这个陕北民谣，嗯，这个可能在想，哎，是不是他是受到了黑神话的启发？",
-        "<|Sichuan|>哎哟喂，这个搞反了噻！黑神话里头唱曲子的王二浪早八百年就在黄土高坡吼秦腔喽，游戏组专门跑切录的原汤原水，听得人汗毛儿都立起来！",
-        "[S1] <|Sichuan|>各位《巴适得板》的听众些，大家好噻！我是你们主持人晶晶。今儿天气硬是巴适，不晓得大家是在赶路嘛，还是茶都泡起咯，准备跟我们好生摆一哈龙门阵喃？\n[S2] <|Sichuan|>晶晶好哦，大家安逸噻！我是李老倌。你刚开口就川味十足，摆龙门阵几个字一甩出来，我鼻子头都闻到茶香跟火锅香咯！\n[S1] <|Sichuan|>就是得嘛！李老倌，我前些天带个外地朋友切人民公园鹤鸣茶社坐了一哈。他硬是搞不醒豁，为啥子我们一堆人围到杯茶就可以吹一下午壳子，从隔壁子王嬢嬢娃儿耍朋友，扯到美国大选，中间还掺几盘斗地主。他说我们四川人简直是把摸鱼刻进骨子里头咯！\n[S2] <|Sichuan|>你那个朋友说得倒是有点儿趣，但他莫看到精髓噻。摆龙门阵哪是摸鱼嘛，这是我们川渝人特有的交际方式，更是一种活法。外省人天天说的松弛感，根根儿就在这龙门阵里头。今天我们就要好生摆一哈，为啥子四川人活得这么舒坦。就先从茶馆这个老窝子说起，看它咋个成了我们四川人的魂儿！",
-    ],
-    [
-        S1_PROMPT_WAV,
-        "喜欢攀岩、徒步、滑雪的语言爱好者，以及过两天要带着全部家当去景德镇做陶瓷的白日梦想家。",
-        "<|Yue|>真係冇讲错啊！攀山滑雪嘅语言专家几巴闭，都唔及我听日拖成副身家去景德镇玩泥巴，呢铺真系发哂白日梦咯！",
-        S2_PROMPT_WAV,
-        "呃，还有一个就是要跟大家纠正一点，就是我们在看电影的时候，尤其是游戏玩家，看电影的时候，在看到那个到西北那边的这个陕北民谣，嗯，这个可能在想，哎，是不是他是受到了黑神话的启发？",
-        "<|Yue|>咪搞错啊！陕北民谣响度唱咗几十年，黑神话边有咁大面啊？你估佢哋抄游戏咩！",
-        "[S1] <|Yue|>哈囉大家好啊，歡迎收聽我哋嘅節目。喂，我今日想問你樣嘢啊，你覺唔覺得，嗯，而家揸電動車，最煩，最煩嘅一樣嘢係咩啊？\n[S2] <|Yue|>梗係充電啦。大佬啊，搵個位都已經好煩，搵到個位仲要喺度等，你話快極都要半個鐘一個鐘，真係，有時諗起都覺得好冇癮。\n[S1] <|Yue|>係咪先。如果我而家同你講，充電可以快到同入油差唔多時間，你信唔信先？喂你平時喺油站入滿一缸油，要幾耐啊？五六分鐘？\n[S2] <|Yue|>差唔多啦，七八分鐘，點都走得啦。電車喎，可以做到咁快？你咪玩啦。",
-    ],
-    [
-        S1_PROMPT_WAV,
-        "喜欢攀岩、徒步、滑雪的语言爱好者，以及过两天要带着全部家当去景德镇做陶瓷的白日梦想家。",
-        "<|Henan|>俺这不是怕恁路上不得劲儿嘛！那景德镇瓷泥可娇贵着哩，得先拿咱河南人这实诚劲儿给它揉透喽。",
-        S2_PROMPT_WAV,
-        "呃，还有一个就是要跟大家纠正一点，就是我们在看电影的时候，尤其是游戏玩家，看电影的时候，在看到那个到西北那边的这个陕北民谣，嗯，这个可能在想，哎，是不是他是受到了黑神话的启发？",
-        "<|Henan|>恁这想法真闹挺！陕北民谣比黑神话早几百年都有了，咱可不兴这弄颠倒啊，中不？恁这想法真闹挺！那陕北民谣在黄土高坡响了几百年，咋能说是跟黑神话学的咧？咱得把这事儿捋直喽，中不中！",
-        "[S1] <|Henan|>哎，大家好啊，欢迎收听咱这一期嘞《瞎聊呗，就这么说》，我是恁嘞老朋友，燕子。\n[S2] <|Henan|>大家好，我是老张。燕子啊，今儿瞅瞅你这个劲儿，咋着，是有啥可得劲嘞事儿想跟咱唠唠？\n[S1] <|Henan|>哎哟，老张，你咋恁懂我嘞！我跟你说啊，最近我刷手机，老是刷住些可逗嘞方言视频，特别是咱河南话，咦～我哩个乖乖，一听我都憋不住笑，咋说嘞，得劲儿哩很，跟回到家一样。\n[S2] <|Henan|>你这回可算说到根儿上了！河南话，咱往大处说说，中原官话，它真嘞是有一股劲儿搁里头。它可不光是说话，它脊梁骨后头藏嘞，是咱一整套、鲜鲜活活嘞过法儿，一种活人嘞道理。\n[S1] <|Henan|>活人嘞道理？哎，这你这一说，我嘞兴致“腾”一下就上来啦！觉住咱这嗑儿，一下儿从搞笑视频蹿到文化顶上了。那你赶紧给我白话白话，这里头到底有啥道道儿？我特别想知道——为啥一提起咱河南人，好些人脑子里“蹦”出来嘞头一个词儿，就是实在？这个实在，骨子里到底是啥嘞？",
+        """[S1] 亲爱的听众们，哈喽哈喽，圣诞快乐啊！欢迎收听我们的科技播客《希强聊车》！我是小希。
+[S2] 我是小强。圣诞快乐啊！今天聊聊特斯拉FSD在中国啥情况？小希，你老车主了，有啥新动态？
+[S1] 哎呀，当年咬牙加了6.4万FSD，等得我心碎啊！好在今年2月终于推送城市智能辅助了，自动变道、认红绿灯挺聪明，最近更新后更顺手，我都想夸它“宝贝真棒”呀！
+[S2] 心动了<|laughter|>！现在能完全放手吗？像美国那样？
+[S1] 还不行呢～还是L2级别，得盯着路、手放方向盘。中国版跟美国有差距，比如不能全自动停车位进出。复杂路口偶尔犹豫，但整体用着越来越舒服了，真的！
+[S2] 为什么推进这么谨慎呢？马斯克不是一直说很快吗？
+[S1] 哈哈，主要监管和数据安全嘛，数据必须本地存。上海数据中心建好后才慢慢解锁，今年试用活动也没多久就暂停了。嗯，安全第一，我完全理解啦！
+[S2] 未来能追上国产智驾吗？小鹏华为现在多爽啊。
+[S1]  哇，竞争超级激烈呢！国产迭代快，但特斯拉纯视觉端到端潜力大。我超看好哦！马斯克11月说部分批准了，2026年2-3月估计完全放开，到时候功能接近美国版，销量肯定涨啦！
+[S2] 还得熬几个月。老车主急眼了吧？
+[S1] 是啊，尤其是HW3的，心里不是滋味。我HW4还行。总之推进虽慢，但稳，安全优先。完全放开后，特斯拉在中国有戏！
+[S2]  对，大市场不能掉队。好了，今天到这儿。圣诞快乐，新年快乐！
+[S1] 圣诞快乐～大家节日愉快！下期见啦！""",
+        "example/audios/sample3.wav",
     ],
 ]
 
@@ -161,8 +175,8 @@ _i18n_key2lang_dict = dict(
         zh="合成文本输入",
     ),
     dialogue_text_input_placeholder=dict(
-        en="[S1]text[S2]text[S1]text...",
-        zh="[S1]文本[S2]文本[S1]文本...",
+        en="[S1]text\n[S2]text\n[S1]text...",
+        zh="[S1]文本\n[S2]文本\n[S1]文本...",
     ),
     # Generate button
     generate_btn_label=dict(
@@ -171,8 +185,18 @@ _i18n_key2lang_dict = dict(
     ),
     # Generated audio
     generated_audio_label=dict(
-        en="Generated Dialogue Audio",
-        zh="合成的对话音频",
+        en="Generated Audio",
+        zh="合成的音频",
+    ),
+    # Examples label
+    examples_label=dict(
+        en="Podcast Template Examples (Click to Load)",
+        zh="播客模板示例 (点击加载)",
+    ),
+    # Examples generated audio
+    examples_generated_audio_label=dict(
+        en="Example Audio",
+        zh="示例音频",
     ),
     # Warining1: invalid text for prompt
     warn_invalid_spk1_prompt_text=dict(
@@ -195,7 +219,7 @@ _i18n_key2lang_dict = dict(
 )
 
 
-global_lang: Literal["zh", "en"] = "zh"
+global_lang: Literal["zh", "en"] = "en"
 
 def i18n(key):
     global global_lang
@@ -362,12 +386,12 @@ def update_prompt_text(dialect_key: str, example_key: str):
 
 
 def render_interface() -> gr.Blocks:
-    with gr.Blocks(title="SoulX-Podcast", theme=gr.themes.Default()) as page:
+    with gr.Blocks(title="SoulX-Podcast") as page:
 
         with gr.Row():
             lang_choice = gr.Radio(
-                choices=["中文", "English"],
-                value="中文",
+                choices=["English", "中文"],
+                value="English",
                 label="Display Language/显示语言",
                 type="index",
                 interactive=True,
@@ -401,6 +425,7 @@ def render_interface() -> gr.Blocks:
                         placeholder=i18n("spk1_dialect_prompt_text_placeholder"),
                         value="",
                         lines=3,
+                        visible=False,
                     )
 
             with gr.Column(scale=1, visible=True):
@@ -421,6 +446,7 @@ def render_interface() -> gr.Blocks:
                         placeholder=i18n("spk2_dialect_prompt_text_placeholder"),
                         value="",
                         lines=3,
+                        visible=False,
                     )
 
             with gr.Column(scale=2):
@@ -447,25 +473,53 @@ def render_interface() -> gr.Blocks:
         )
 
 
+        # Generated audio component for the examples table column (not rendered separately)
+        examples_generated_audio = gr.Audio(
+            label=i18n("examples_generated_audio_label"),
+            type="filepath",
+            interactive=False,  # Read-only but playable
+            visible=False,  # Hidden - only used as a column in the table
+        )
+        
         with gr.Row():
             inputs_for_examples = [
                 spk1_prompt_audio,
                 spk1_prompt_text,
-                spk1_dialect_prompt_text,
                 spk2_prompt_audio,
                 spk2_prompt_text,
-                spk2_dialect_prompt_text,
                 dialogue_text_input,
+                examples_generated_audio,  # This creates the column in the table
             ]
             
             gr.Examples(
                 examples=EXAMPLES_LIST,
                 inputs=inputs_for_examples,
-                label="播客模板示例 (点击加载)",
+                label=i18n("examples_label"),
                 examples_per_page=5,
             )
         
-        with gr.Accordion("方言提示文本 (Dialect Prompt) 选择器", open=False):
+        # Display area for selected example audio below the table
+        examples_generated_audio_display = gr.Audio(
+            label=i18n("examples_generated_audio_label"),
+            type="filepath",
+            interactive=False,  # Read-only but playable
+            visible=True,
+        )
+        
+        # Function to update the display audio when an example is clicked
+        def update_display_audio_from_example(spk1_audio, spk1_text, spk2_audio, spk2_text, dialogue_text, generated_audio):
+            # Return the generated_audio value to display it below the table
+            return gr.update(value=generated_audio)
+        
+        # Update the display audio when any example field changes
+        for input_component in inputs_for_examples:
+            input_component.change(
+                fn=update_display_audio_from_example,
+                inputs=inputs_for_examples,
+                outputs=[examples_generated_audio_display],
+            )
+        
+        with gr.Accordion("方言提示文本 (Dialect Prompt) 选择器", open=False, visible=False):
             gr.Markdown("选择方言后，请分别为 S1 和 S2 选择一个示例。")
             dialect_selector = gr.Dropdown(
                 label="选择方言 (Select Dialect)", 
@@ -509,7 +563,7 @@ def render_interface() -> gr.Blocks:
 
         def _change_component_language(lang):
             global global_lang
-            global_lang = ["zh", "en"][lang]
+            global_lang = ["en", "zh"][lang]
             return [
                 
                 # spk1_prompt_{audio,text,dialect_prompt_text}
@@ -521,6 +575,7 @@ def render_interface() -> gr.Blocks:
                 gr.update(
                     label=i18n("spk1_dialect_prompt_text_label"),
                     placeholder=i18n("spk1_dialect_prompt_text_placeholder"),
+                    visible=False,
                 ),
                 # spk2_prompt_{audio,text}
                 gr.update(label=i18n("spk2_prompt_audio_label")),
@@ -531,6 +586,7 @@ def render_interface() -> gr.Blocks:
                 gr.update(
                     label=i18n("spk2_dialect_prompt_text_label"),
                     placeholder=i18n("spk2_dialect_prompt_text_placeholder"),
+                    visible=False,
                 ),
                 # dialogue_text_input
                 gr.update(
