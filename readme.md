@@ -45,10 +45,15 @@ To meet the higher naturalness demands of multi-turn spoken dialogue, SoulX-Podc
   </tr>
 </table>
 
-## Screenshot
-<div align="center">
-![Screenshot](assets/screenshot.jpg)
-</div>
+## Demo
+
+Try our online demo: [🌐 http://173.208.210.27:7860/](http://173.208.210.27:7860/)
+
+## Demo Screenshot
+
+<p align="center">
+  <img src="assets/screenshot.jpg" alt="Screenshot" width="80%">
+</p>
 
 ## Demo Examples
 example1.mp4
