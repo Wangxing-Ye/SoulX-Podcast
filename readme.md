@@ -48,11 +48,12 @@ To meet the higher naturalness demands of multi-turn spoken dialogue, SoulX-Podc
 ## Demo
 
 Try our online demo: [🌐 http://173.208.210.27:7860/](http://173.208.210.27:7860/)
+or
+You can record your voice and have a conversation with Trump and Musk: [🌐 https://cir-and-layout-ceo.trycloudflare.com/](https://cir-and-layout-ceo.trycloudflare.com/)
 
-## Demo Screenshot
 
 <p align="center">
-  <img src="assets/screenshot.jpg" alt="Screenshot" width="80%">
+  <img src="assets/screenshot.jpg" alt="Screenshot" width="100%">
 </p>
 
 ## Demo Examples
