@@ -47,7 +47,7 @@ To meet the higher naturalness demands of multi-turn spoken dialogue, SoulX-Podc
 
 ## Screenshot
 <div align="center">
-[![Screenshot](assets/screenshot.jpg)]
+![Screenshot](assets/screenshot.jpg)
 </div>
 
 ## Demo Examples
@@ -171,6 +171,45 @@ python3 webui.py --model_path pretrained_models/SoulX-Podcast-1.7B
 python3 webui.py --model_path pretrained_models/SoulX-Podcast-1.7B-dialect
 
 
+```
+
+### MP4 Video
+
+You can simply build a video with ffmpeg and whisper.
+``` sh
+# Install whisper:
+brew install openai-whisper
+
+# Install ffmpeg:
+brew install ffmpeg
+
+# Generate subtitle:
+whisper sample.wav --model medium --output_format srt
+
+#Build video (bg.jpg 1920x1080, s1.jpg 400x400, s2.jpg 400x400):
+ffmpeg \
+-loop 1 -i bg.jpg \
+-loop 1 -i s1.jpg \
+-loop 1 -i s2.jpg \
+-i sample.wav \
+-filter_complex "
+[0:v]format=yuv420p[bg];
+
+[1:v]format=rgba,
+geq=lum='p(X,Y)':a='if(lte((X-200)^2+(Y-200)^2,200^2),255,0)'[a1];
+
+[2:v]format=rgba,
+geq=lum='p(X,Y)':a='if(lte((X-200)^2+(Y-200)^2,200^2),255,0)'[a2];
+
+[bg][a1]overlay=200:(H-h)/2[tmp1];
+[tmp1][a2]overlay=W-w-200:(H-h)/2,
+subtitles=sample.srt:force_style='Fontsize=48,Alignment=2'
+" \
+-c:v libx264 \
+-pix_fmt yuv420p \
+-c:a aac \
+-shortest \
+sample.mp4
 ```
 
 
