@@ -48,29 +48,21 @@ To meet the higher naturalness demands of multi-turn spoken dialogue, SoulX-Podc
 
 ## Demo Examples
 
-**Zero-Shot Podcast Generation**
-
 <div align="center">
 
-[![Sample 1](assets/sample1.jpg)](https://github.com/Wangxing-Ye/SoulX-Podcast/blob/main/assets/sample1.mp4)
-
-</div>
-
-**Cross-Dialectal Zero-Shot Podcast Generation**
-
-🎙️ All prompt audio samples used in the following generations are in Mandarin.
-
-🎙️ 以下音频生成采用的参考音频全部为普通话。
-
-<div align="center">
-
-[![Sample 2](assets/sample2.jpg)](https://github.com/Wangxing-Ye/SoulX-Podcast/blob/main/assets/sample2.mp4)
+[![Sample 1](assets/sample1.jpg)](https://wangxing-ye.github.io/SoulX-Podcast/sample1.mp4)
 
 </div>
 
 <div align="center">
 
-[![Sample 3](assets/sample3.jpg)](https://github.com/Wangxing-Ye/SoulX-Podcast/blob/main/assets/sample3.mp4)
+[![Sample 2](assets/sample2.jpg)](https://wangxing-ye.github.io/SoulX-Podcast/sample2.mp4)
+
+</div>
+
+<div align="center">
+
+[![Sample 3](assets/sample3.jpg)](https://wangxing-ye.github.io/SoulX-Podcast/sample3.mp4)
 
 </div>
 
