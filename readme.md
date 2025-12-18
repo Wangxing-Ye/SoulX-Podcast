@@ -45,21 +45,27 @@ To meet the higher naturalness demands of multi-turn spoken dialogue, SoulX-Podc
   </tr>
 </table>
 
+## Screenshot
+<div align="center">
+[![Screenshot](assets/screenshot.jpg)]
+</div>
 
 ## Demo Examples
-
+example1.mp4
 <div align="center">
 
 [![Sample 1](assets/sample1.jpg)](https://wangxing-ye.github.io/SoulX-Podcast/sample1.mp4)
 
 </div>
 
+example2.mp4
 <div align="center">
 
 [![Sample 2](assets/sample2.jpg)](https://wangxing-ye.github.io/SoulX-Podcast/sample2.mp4)
 
 </div>
 
+example3.mp4
 <div align="center">
 
 [![Sample 3](assets/sample3.jpg)](https://wangxing-ye.github.io/SoulX-Podcast/sample3.mp4)
