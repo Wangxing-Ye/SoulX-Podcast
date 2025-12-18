@@ -89,7 +89,7 @@ EXAMPLES_LIST = [
 [S1] Whoa, it’s already folding laundry and cooking, right? How much is real autonomy vs remote control these days?
 [S2] Haha, it’s doing laundry, cooking, even yoga. Core tasks are pure end-to-end AI; we only use remote control for safety in some demos.
 [S1] Cool! When you start selling — factories first or homes? And one going to Mars in 2026?
-[S2] Factories first, then homes. And yes, at least one on Starship to Mars. Early Merry Christmas!""",
+[S2] Factories first, then homes. And yes, at least one on Starship to Mars. Merry Christmas!""",
         "example/audios/sample2.wav",
     ],
     [
