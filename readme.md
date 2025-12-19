@@ -1,5 +1,5 @@
 ## 🔗 Original Project
-This project is forked from SoulX-Podcast: https://github.com/Soul-AILab/SoulX-Podcast
+This project is forked from SoulX-Podcast <img src="https://raw.githubusercontent.com/Soul-AILab/SoulX-Podcast/main/assets/SoulX-Podcast-log.jpg" alt="SoulX-Podcast_Logo" style="width: 140px; height: 48px; vertical-align: middle;">: https://github.com/Soul-AILab/SoulX-Podcast
 
 SoulX-Podcast: Towards Realistic Long-form Podcasts with Dialectal and Paralinguistic Diversity
 
@@ -75,17 +75,6 @@ example3.mp4
 </div>
 
 For more examples, see [demo page](https://soul-ailab.github.io/soulx-podcast/).
-
-
-## 🚀 News
-- **[2025-11-03]** Support vllm with docker.
-- **[2025-10-31]** Deploy an online demo on [Hugging Face Spaces](https://huggingface.co/Soul-AILab/spaces).
-
-- **[2025-10-30]** Add example scripts for monologue TTS and support a WebUI for easy inference.
-
-- **[2025-10-29]** We are excited to announce that the latest SoulX-Podcast checkpoint is now available on Hugging Face! You can access it directly from [SoulX-Podcast-hugging-face](https://huggingface.co/collections/Soul-AILab/soulx-podcast).
-
-- **[2025-10-28]** Our paper on this project has been published! You can read it here: [SoulX-Podcast](https://arxiv.org/pdf/2510.23541).
 
 ## Install
 
