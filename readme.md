@@ -93,7 +93,7 @@ For more examples, see [demo page](https://soul-ailab.github.io/soulx-podcast/).
 Here are instructions for installing on Linux.
 - Clone the repo
 ```
-git clone git@github.com:Soul-AILab/SoulX-Podcast.git
+git clone git@github.com:Wangxing-Ye/SoulX-Podcast.git
 cd SoulX-Podcast
 ```
 - Install Conda: please see https://docs.conda.io/en/latest/miniconda.html
@@ -214,36 +214,9 @@ subtitles=sample.srt:force_style='Fontsize=48,Alignment=2'
 sample.mp4
 ```
 
-
-## TODOs
-- [x] Add example scripts for monologue TTS.
-- [x] Publish the [technical report](https://arxiv.org/pdf/2510.23541).
-- [x] Develop a WebUI for easy inference.
-- [x] Deploy an online demo on [Hugging Face Spaces](https://huggingface.co/Soul-AILab/spaces).
-- [x] Dockerize the project with vLLM support.
-- [ ] Add support for streaming inference.
-
-## Citation
-
-```bibtex
-@misc{SoulXPodcast,
-  title        = {SoulX-Podcast: Towards Realistic Long-form Podcasts with Dialectal and Paralinguistic Diversity},
-  author       = {Hanke Xie and Haopeng Lin and Wenxiao Cao and Dake Guo and Wenjie Tian and Jun Wu and Hanlin Wen and Ruixuan Shang and Hongmei Liu and Zhiqi Jiang and Yuepeng Jiang and Wenxi Chen and Ruiqi Yan and Jiale Qian and Yichao Yan and Shunshun Yin and Ming Tao and Xie Chen and Lei Xie and Xinsheng Wang},
-  year         = {2025},
-  archivePrefix={arXiv},
-  url          = {https://arxiv.org/abs/2510.23541}
-}
-
-```
-
 ## License
 
 We use the Apache 2.0 license. Researchers and developers are free to use the codes and model weights of our SoulX-Podcast. Check the license at [LICENSE](LICENSE) for more details.
-
-
-## Acknowledge
-- This repo benefits from [FlashCosyVoice](https://github.com/xingchensong/FlashCosyVoice/tree/main)
-
 
 ##  Usage Disclaimer
 This project provides a speech synthesis model for podcast generation capable of zero-shot voice cloning, intended for academic research, educational purposes, and legitimate applications, such as personalized speech synthesis, assistive technologies, and linguistic research.
@@ -257,23 +230,3 @@ Ensure compliance with local laws and regulations when using this model and upho
 The developers assume no liability for any misuse of this model.
 
 We advocate for the responsible development and use of AI and encourage the community to uphold safety and ethical principles in AI research and applications. If you have any concerns regarding ethics or misuse, please contact us.
-
-## Contact Us
-If you are interested in leaving a message to our work, feel free to email hkxie@mail.nwpu.edu.cn or linhaopeng@soulapp.cn or lxie@nwpu.edu.cn or wangxinsheng@soulapp.cn
-
-You’re welcome to join our WeChat group for technical discussions, updates.
-<p align="center">
-  <!-- <em>Due to group limits, if you can't scan the QR code, please add my WeChat for group access  -->
-      <!-- : <strong>Tiamo James</strong></em> -->
-  <br>
-  <span style="display: inline-block; margin-right: 10px;">
-    <img src="assets/wechat-5.jpg" width="300" alt="WeChat Group QR Code"/>
-  </span>
-  <!-- <span style="display: inline-block;">
-    <img src="assets/wechat_tiamo.jpg" width="300" alt="WeChat QR Code"/>
-  </span> -->
-</p>
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=Soul-AILab/SoulX-Podcast&type=date&legend=top-left)](https://www.star-history.com/#Soul-AILab/SoulX-Podcast&type=date&legend=top-left)
