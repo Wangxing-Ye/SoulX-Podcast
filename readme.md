@@ -39,7 +39,7 @@ All original credit goes to the original authors.
   </tr>
 </table>
 
-## Demo
+## Demo Page
 
 🌐 https://cir-and-layout-ceo.trycloudflare.com/ 
 
@@ -53,21 +53,21 @@ This server is **temporarily hosted** and may be **shut down at any time**.
 </p>
 
 ## Demo Examples
-example1.mp4
+[example1.mp4](https://wangxing-ye.github.io/SoulX-Podcast/sample1.mp4)
 <div align="center">
 
 [![Sample 1](assets/sample1.jpg)](https://wangxing-ye.github.io/SoulX-Podcast/sample1.mp4)
 
 </div>
 
-example2.mp4
+[example2.mp4](https://wangxing-ye.github.io/SoulX-Podcast/sample2.mp4)
 <div align="center">
 
 [![Sample 2](assets/sample2.jpg)](https://wangxing-ye.github.io/SoulX-Podcast/sample2.mp4)
 
 </div>
 
-example3.mp4
+[example3.mp4](https://wangxing-ye.github.io/SoulX-Podcast/sample3.mp4)
 <div align="center">
 
 [![Sample 3](assets/sample3.jpg)](https://wangxing-ye.github.io/SoulX-Podcast/sample3.mp4)
