@@ -198,6 +198,11 @@ _i18n_key2lang_dict = dict(
         en="Example Audio",
         zh="示例音频",
     ),
+    # Help section
+    help_section_label=dict(
+        en="Help",
+        zh="帮助",
+    ),
     # Warining1: invalid text for prompt
     warn_invalid_spk1_prompt_text=dict(
         en='Invalid speaker 1 prompt text, should not be empty and strictly follow: "xxx"',
@@ -464,6 +469,7 @@ def render_interface() -> gr.Blocks:
                 variant="primary", 
                 scale=3,
                 size="lg",
+                elem_id="generate_btn",
             )
         
         # Long output audio
@@ -505,6 +511,16 @@ def render_interface() -> gr.Blocks:
             interactive=False,  # Read-only but playable
             visible=True,
         )
+        
+        # Help Section
+        with gr.Accordion(i18n("help_section_label"), open=False):
+            help_text = gr.Markdown("""
+**S1:** Speaker 1
+
+**S2:** Speaker 2
+
+**Paralinguistic tags (non-verbal vocalizations):** `<|laughter|>`, `<|sigh|>`, `<|breathing|>`, `<|coughing|>`, and `<|throat_clearing|>`.
+            """)
         
         # Function to update the display audio when an example is clicked
         def update_display_audio_from_example(spk1_audio, spk1_text, spk2_audio, spk2_text, dialogue_text, generated_audio):
@@ -615,6 +631,38 @@ def render_interface() -> gr.Blocks:
             ],
         )
         
+        # Add JavaScript confirmation dialog to intercept button clicks
+        page.load(
+            fn=None,
+            js="""
+            () => {
+                function setupConfirmation() {
+                    const btn = document.getElementById('generate_btn');
+                    if (btn && !btn.dataset.confirmAdded) {
+                        btn.dataset.confirmAdded = 'true';
+                        // Use capture phase (true) to intercept before Gradio's handlers
+                        btn.addEventListener('click', function(e) {
+                            if (!confirm('Are you sure you want to generate audio?')) {
+                                e.preventDefault();
+                                e.stopPropagation();
+                                e.stopImmediatePropagation();
+                                return false;
+                            }
+                        }, true);
+                    }
+                }
+                // Try immediately and also after delays to catch dynamic rendering
+                setupConfirmation();
+                setTimeout(setupConfirmation, 300);
+                setTimeout(setupConfirmation, 1000);
+                // Also observe DOM changes
+                const observer = new MutationObserver(setupConfirmation);
+                observer.observe(document.body, { childList: true, subtree: true });
+            }
+            """,
+        )
+        
+        # Add confirmation dialog using JavaScript
         generate_btn.click(
             fn=dialogue_synthesis_function,
             inputs=[
